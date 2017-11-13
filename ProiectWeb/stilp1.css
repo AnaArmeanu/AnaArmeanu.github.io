@@ -1,0 +1,456 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, 'sans serif';
+}
+
+.mareste:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+
+        border-radius: 8px;
+        z-index: 1;
+        background-color: white;
+
+        transition-duration: 0.4s;
+}
+
+/************************************     BODY      ************************************/
+body
+{
+    background-image: url("Imagini/pug-pexels-photo-374906.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/**************************************************************************************************/
+/************************************       P         *************************************/
+
+p
+{
+    font-size: calc(0.15em + 1vw); /* 1vw = 1% dimensiunea ecranului; 0.3em e o dimensiune
+                                  exacta => combinate dau un efect mai "sigur" */
+}
+
+
+.povest
+{
+    font-style: italic;
+    color: grey;
+    padding-top: 9%;
+}
+
+
+/*****************************************************************************************/
+/************************************     HEADER      ************************************/
+
+header
+{
+    position: relative;
+    top: 2px;
+    text-align: center;
+    background-color: rgba(190, 112, 82,0.7);
+    height: 1000%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8%;
+
+    border-radius: 10px;
+    
+}
+header h1
+{
+    /*font-size: 300%;*/
+    font-size:calc(0.8em + 2.5vw);
+    text-align: center;
+    vertical-align: inherit;
+    font-family: font-family: 'Merriweather', serif;
+    text-decoration-line: underline;
+    padding-top: 1.7%;
+    padding-bottom: auto;
+}
+
+/**************************************************************************************************/
+
+/************************************     NAV      ************************************/
+
+#meniu_site
+{
+    position:relative;
+    border-radius: 10px;
+    background-color: cornsilk;
+    color: black;
+    text-shadow: 2px 2px #ffffff;
+    font-style: bold;
+    text-decoration: none;
+    text-align: center;
+
+    opacity: 0.9;
+    box-sizing: border-box;
+    width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    /*font-size: 100%;*/
+     font-size:calc(0.3em + 1vw);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-bottom:2%;
+}
+
+#meniu_site div
+{
+    display: inline-block;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top:0%;
+    z-index: 1;
+    font-family: Helvetica, sans-serif;
+    font-style: bold;
+    padding: 0.8%;
+    height:90%;
+    width:auto;
+    font-size:100%;
+}
+
+/*******************/
+#meniu_pagina
+{
+    background-color: rgba(248,131,121,0.8);
+    position: sticky;
+    top:0;
+    z-index: 1; /* ordinea in care "sunt vazute el."; ca sa pot da click in nav, desi e peste un video*/
+    
+    width: 11%;
+    height: auto;
+    border-radius: 10px;
+
+    color: black;
+    text-shadow: 1px 1px #ffffff;
+    font-style: bold;
+    font-size: 100%;
+    text-decoration: none;
+    text-align: center;
+
+    opacity: 0.5;
+     box-sizing: border-box;
+}
+
+#meniu_pagina:hover
+{
+    opacity:1;
+    transition-duration: 1.3s;
+}
+
+#meniu_pagina ul
+{
+    list-style: none;
+
+}
+
+#miniD
+{
+    font-size: 120%;
+    list-style: square; /*-- un mic semn ca va face altceva : dropdown; */
+}
+
+#Drop a/*elementele din miniD*/
+{
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-bottom:5%;
+}
+
+ #miniD:hover a
+{
+    display: block;
+    width:10%;
+    height: auto;
+    font-size: 100%;
+
+}
+
+
+#meniu_pagina ul li
+{
+    padding-top: 8%;
+    padding-right: 30%;
+    
+}
+
+#meniu_pagina ul > li:nth-child(1)
+{
+    padding: 6%;
+    padding-right: 30%;
+}
+
+#meniu_pagina li:last-child /*ultimul el din lista, ca sa arate mai bine*/
+{
+    padding-bottom: 10%;
+}
+
+
+
+/**************************************************************************************************/
+
+
+/************************************     ARTICLE      ************************************/
+
+#Povesti h2
+{
+    color: white;
+    background-color: #c0b3a0;
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    left: 80%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 100px;
+    margin-bottom: 100%;
+    margin-top: 0%;
+
+    width: 10%;
+    height:auto;
+     font-size:calc(0.5em + 1vw);
+}
+
+article h3
+{
+    text-align: center;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    padding:0.8%;
+    width:40%;
+    height:auto;
+    background-color: #22252C;
+    border-radius: 8px;
+    margin-bottom: 0%;
+     font-size:calc(0.5em + 1.1vw);
+}
+
+article div
+{
+    margin-top: 0%;
+    border: 5px solid #F1DED1;
+    border-radius: 8px ;
+    background-color: rgba(248, 247, 241,0.80);
+    width: 50%; /* e 50% din dimensiunea articolului */
+    height: auto;
+    -webkit-box-sizing: border-box;/*pentru pozitionarea corecta a borederului*/
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2.1%;
+    overflow: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.5%;
+    
+}
+
+article p
+{
+    text-align: left;
+}
+
+article video
+{
+    width: 100%;
+    height: auto;
+}
+
+.important
+{
+    color: #665544;
+    float: right;
+    font-size:calc(0.3em + 1vw);
+    /*width: 20%;*/
+    padding: 1.5%;
+    padding-right: 20%;
+}
+
+article p
+{
+    clear: all;
+}
+
+article img
+{
+    max-width: 100%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**************************************************************************************************/
+
+/************************************     ASIDE      ************************************/
+aside
+{
+    position: fixed;
+    top:35%;
+    right:0;
+    float: right; 
+    width: 18%;/*pt responsive*/
+    height:auto;
+    margin-right: 3%;
+    z-index: 1;
+}
+
+aside h3
+{
+    color: rgba(195, 138, 34, 2);
+    text-align: center;
+}
+aside iframe
+{
+    width:100%;/*pt responsive*/
+    height: auto;
+    margin-right: 0px;
+}
+
+/**************************************************************************************************/
+/*********************************** ANCORE  *******************************************/
+
+a{
+    color: black;
+    font-style: bold;
+    font-size: 120%;
+    text-decoration: none;
+    text-shadow: 1px 1px #ffffff;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    transition-duration: 1.3s;
+}
+
+/**************************************************************************************/
+/**************************** FOOTER **********************************/
+footer
+{
+    position: absolute;
+    left:31%;
+    margin-top:30%;
+    width:38%;
+    height:auto;
+    clear:all;
+    border-radius: 10px;
+    background-color: rgba(204, 82, 0,0.8);
+}
+
+footer > div /*toti div ai caror tati sunt footer*/
+{
+    display: inline-block;
+    margin-left:5%;
+    margin-right:5%;
+    text-align: center;
+    padding-bottom: 1.3%;
+
+}
+
+footer div:last-of-type
+{
+    text-decoration: none;
+    border-bottom: 0.3em dotted navy;
+}
+
+footer div:nth-child(1)
+{
+    text-decoration: none;
+    border-bottom: 0.3em dotted navy;
+}
+
+footer div:nth-of-type(2)
+{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: navy;
+}
+
+footer a
+{
+    display: block;
+}
+
+footer h4
+{
+    color: cornsilk;
+}
+/*******************************************************************/
+
+/*************************** Media Queries *********************************/
+
+@media screen and (max-width: 950px)
+{
+    article div
+    {
+        width: 100%; /* e 50% din dimensiunea articolului */
+        height: auto;
+        font-size:calc(2em + 6vw);
+
+    }
+
+    .important
+    {
+        font-size:calc(1em + 2vw);
+    }
+
+    #Povesti h2
+    {
+        position:absolute;
+    }
+
+    aside
+    {
+        visibility: hidden;
+    }
+
+    #meniu_pagina
+    {
+        display:none;
+    }
+
+    footer
+    {
+         font-size:90%;
+    }
+
+    header
+    {
+        margin-bottom: 1%;
+    }
+
+    footer div
+    {
+        font-size: 60%;
+    }
+
+}
+
+
+@media screen and (max-width: 1500px) /*ca sa arate mai bine */
+{
+
+    footer div
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+
+    #Povesti h2
+    {
+        display:none;
+    }
+
+}

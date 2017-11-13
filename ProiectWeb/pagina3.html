@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Life with pets</title>
+         <!--Daca folosesc tag-ul base, ancorele in document nu mai functioneaza corect.
+        <base href="file:///C:/Users/Ana/Desktop/ProiectWeb/" target="_blank">
+        -->
+        <meta charset="utf-8">
+        <meta name="keywords" content="pet,animal,friend,story">
+        <meta name="author" content="Ana-Maria Armeanu">
+        <link rel="stylesheet" type="text/css" href="stilp1.css">
+        <link rel="stylesheet" type="text/css" href="stilp3.css">
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <!-- font-family: 'Inconsolata', monospace; -->
+    </head>
+    <body>
+        
+        <header id = "head">
+            <h1>LIFE WITH PETS</h1>
+            <!--<img src="pisiscalat.jpg" alt="pisica">-->
+        </header>
+        
+        <nav id="meniu_site"> <!--Meniul cu legaturi la alte pagini-->
+ <div class="mareste">
+               <a href="pagina1.html">Home(Pet Stories) </a>
+            </div>
+            <div class="mareste">
+               <a href="pagina2.html">Gallery </a>
+            </div>
+            <div class="mareste">
+               <a href="pagina3.html">Advice and Games </a>
+            </div>
+        </nav>
+        
+        <nav id="meniu_pagina"> <!--Meniul cu legaturi in pagina-->
+            <!-- Va contine si un meniu drop-down -->
+            
+            <ul>
+                <li><a href="#head">Top of the page</a></li>
+                <li><a href="#foot">Footer</a></li>
+                <li><a href="#Sfaturi">Food Advice</a></li>
+                <li><a href="#Tabel">Food Tabel</a></li>
+                <li><a href="#Nume">Funny names</a></li>
+            </ul>
+            
+        </nav>
+        <section id = "Joculet_map">
+            <h2>Little game</h2>
+            <div>
+                <p>Click on the image and watch the movie.
+                The challenge is not to laugh!(and to click in the right spot... -middle; top;bottom- )</p>
+                <img src="Imagini/cel-lisboa-73965.jpg" alt="kitty" usemap="#try">
+
+                <map name="try">
+                    <area shape="rect" coords="0,0,30,30" alt="try" href="https://www.youtube.com/watch?v=GHhFtkGfaWU">
+                    <area shape="rect" coords="0,30,80,80" alt="try" href="https://www.youtube.com/watch?v=H4KVwYSFMfM">
+                </map>
+            </div>
+        </section>
+        <section id="Nume">
+            <h2>Funniest pet names</h2>
+            <div>
+                <ol>
+                    <li>Yeti Sphaghetti</li>
+                    <li>Little Booty Ham Sandwich</li>
+                    <li>Obi Wan Catnobi</li>
+                    <li>The Great Catsby</li>
+                    <li>Dog Marley</li>
+                </ol>
+            </div>  
+        </section>
+        <section id = "Sfaturi">
+            <h2>About pet food: </h2>
+            <div>
+                <h4>Cats</h4>
+                <p>Cats are obligate carnivores, though most commercial cat food contains both animal and plant material supplemented with vitamins, minerals and other nutrients. Cat food is formulated to address the specific nutritional requirements of cats, in particular containing the amino acid taurine, as cats cannot thrive on taurine-deficient food. Optimal levels of taurine for cat food have been established by the Waltham Centre for Pet Nutrition</p>
+                <h4>Dogs</h4>
+                <p>Recommendations differ on what diet is best for dogs. Some people argue dogs have thrived on leftovers and scraps from their human owners for thousands of years, and commercial dog foods (which have only been available for the past century) contain poor-quality meats, additives, and other ingredients dogs should not ingest, or that commercial dog food is not nutritionally sufficient for their dogs. However, many commercial brands are formulated using insights gained from scientific nutritional studies and there is no reliable peer-reviewed evidence that domestic options are superior. Most store-bought pet food comes in either dry form, also known as kibble, or wet, canned form.</p>
+            </div>
+        </section>
+        <section id="Tabel">
+            <h2>Food cost table</h2>
+            <div style="overflow-x:auto;"><!--asta face tabelul responsive : w3schools : adauga un scroll tab-->
+                <table>
+                    <tr>
+                        <th>Name</th><!--table head = titlul coloanei-->
+                        <th>Cost</th>
+                        <th>Weight(lbs)</th>
+                    </tr>
+                    <tr>
+                        <td>Generic</td>
+                        <td>&#36;10.98</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Purina</td>
+                        <td>&#36;27.88</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Pedigree</td>
+                        <td>&#36;15.48</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Bubbles and Bits</td>
+                        <td>&#36;11.99</td>
+                        <td>16</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer id = "foot">
+            <div>
+                <h4>Story Websites</h4>
+                <a href="http://www.latimes.com/style/pets/la-hm-pets-embarrassing-20170827-htmlstory.html" target="_blank">Los Angeles Times</a>
+                <a href="https://en.wikipedia.org/wiki/Pet_food" target="_blank">Wikipedia</a>
+            </div>
+            <div>
+                <h4>Photo Sources</h4>
+                <a href="http://www.unsplash.com" target="_blank">Unsplash</a>
+                <a href="http://www.pexels.com" target="_blank">Pexels</a>
+            </div>
+            <div>
+                <h4>Video Sources</h4>
+                <a href="http://www.coverr.com" target="_blank">Coverr</a>
+            </div>
+        </footer>
+        
+    </body>
+</html>
