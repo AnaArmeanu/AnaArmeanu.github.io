@@ -1,0 +1,149 @@
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Risque', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Heebo', sans-serif;
+font-family: 'Limelight', cursive;
+*/
+body, html
+{
+  height: 100%;
+  width: auto;
+  margin:0;
+  position:relative;
+}
+body
+{
+  background-color: rgb(79,68,68);
+}
+header
+{
+  border-radius: 25px;
+  background-image: url(imagini/egor-khomiakov-242859.jpg);
+  background-repeat: no-repeat;
+  overflow-y: hidden ;
+  overflow-x: hidden ;
+  background-size: cover;
+  width:80vw;
+  height: 100vh;
+
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;/*ca sa pot folosi absolut in fii*/
+}
+
+header h1
+{
+  color: white;
+  font-size:calc(0.8em + 3.4vw);
+  height:auto;
+  width: 80vw;
+  text-align: center;
+}
+
+#data1
+{
+  position: -webkit-sticky;
+  position: fixed;
+  top: 97vh;
+  z-index: 1;
+  margin-left:1%;
+  padding: 2px;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+#data1:hover
+{
+  opacity: 1;
+}
+
+.ecran
+{
+  position:relative;/*ca sa pot folosi absolut in fii*/
+  background-repeat: no-repeat;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  background-size: cover;
+  width:calc(100vw-0.3vw);
+  height:101vh; /*100% din dimensiunea browserului*/
+}
+
+#e1
+{
+    background-image: url(imagini/nicola-gypsicola-70783.jpg);
+}
+
+#e2
+{
+    background-image: url(imagini/roberta-sorge-125543.jpg);
+}
+#e3
+{
+    background-image: url(imagini/alice-moore-192521.jpg)
+}
+#e4
+{
+    background-image: url(imagini/alphacolor-13-181701.jpg)
+}
+.jos
+{
+  position: absolute;
+  width: 5%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  bottom: 5px;
+  left:45%;
+  opacity: 0.6;
+}
+.jos:hover
+{
+  opacity:1;
+}
+
+.istoric
+{
+  background-repeat: no-repeat;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  background-size: cover;
+  width:30vw;
+  height:auto;
+  position: absolute;
+}
+
+#rock
+{
+    padding: 12px;
+    padding-left: 4%;
+    background-image: url(imagini/scott-gruber-41185.jpg);
+    color: white;
+    text-shadow:  2px 2px #000000;
+    bottom: 20%;
+    right: 5%;
+}
+
+#folk
+{
+    padding: 12px;
+    padding-left: 4%;
+    background-image: url(imagini/pexels-photo-213207.jpg);
+    color: white;
+    text-shadow:  2px 2px #000000;
+    bottom: 20%;
+    right: 5%;
+}
+
+#pop
+{
+    padding: 12px;
+    background
+    padding-left: 4%;
+    background-image: url(imagini/malte-wingen-381988.jpg);
+    color: white;
+    text-shadow:  2px 2px #000000;
+    bottom: 20%;
+    right: 5%;
+    height: 32%;
+}
