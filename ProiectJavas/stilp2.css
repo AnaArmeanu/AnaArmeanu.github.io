@@ -1,0 +1,103 @@
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Risque', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Heebo', sans-serif;
+font-family: 'Limelight', cursive;
+*/
+body, html
+{
+  height: 100%;
+  width: auto;
+  margin:0;
+  position:relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+body
+{
+  background-color: rgb(79,68,68);
+}
+
+input
+{
+  width: 10vw;
+  height:auto;
+}
+
+
+
+.ecran
+{
+  position:relative;/*ca sa pot folosi absolut in fii*/
+  background-repeat: no-repeat;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  background-size: cover;
+  width:99.7vw;
+  height:101vh; /*100% din dimensiunea browserului*/
+}
+#e5
+{
+    background-image: url(imagini/alphacolor-13-181701.jpg)
+}
+#altele h3
+{
+  text-align: center;
+}
+#altele p
+{
+  margin-left:5%;
+}
+
+#date1
+{
+  position: absolute;
+  top: 40vh;
+  left: 10vw;
+}
+#date1 #sbm
+{
+  position:absolute;
+  right: 3px;
+}
+canvas
+{
+  position: relative;
+  left: 40%;
+  top:50px;
+  width:20vw;
+  height:30vh;
+/*  style: border:6px dotted #000000;*/
+}
+
+#stil
+{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+svg
+{
+  position: absolute;
+  left: 63%;
+  bottom: 60%;
+  fill: gray;/*CSS3 validator nu il recunoaste*/
+}
+
+
+@media only screen and (max-width:620px) {
+
+    input
+    {
+      font-size: 2vw;
+    }
+    #date1
+    {
+    position: absolute;
+    top: 70vh;
+    left:40vw;
+    }
+
+}

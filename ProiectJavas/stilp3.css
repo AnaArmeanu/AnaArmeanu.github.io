@@ -1,0 +1,109 @@
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Risque', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Heebo', sans-serif;
+font-family: 'Limelight', cursive;
+*/
+body, html
+{
+  height: 100%;
+  width: auto;
+  margin:0;
+  position:relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-size: 1vw;
+}
+body
+{
+  background-color: rgb(79,68,68);
+  background-image: url("imagini/dominik-scythe-413220.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  color:white;
+}
+
+
+header
+{
+  position: absolute;
+  top: 5vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.2vw;
+}
+section
+{
+  position: absolute;
+  top: 40vh;
+  width:100vw;
+  text-align:center;
+  font-size: 1.8vw;
+}
+article
+{
+  display: none;
+}
+section label
+{
+  margin-right: 5vw;
+}
+#t3 img
+{
+  width:15vw;
+  height: 14vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+}
+.d
+{
+  width: 15vw;
+  height: 14vh;
+  border: 2px solid white;
+  display: inline-block;
+  margin: 0;
+}
+#t3 label
+{ margin-right: 0px;margin-left: 3%; font-size: 70%;}
+#d1
+{
+  position: absolute;
+  top:30vh;
+  left:25vw;
+}
+#d2
+{
+  position: absolute;
+  top:30vh;
+  right:25vw;
+}
+
+
+#s1
+{
+  position: absolute;
+  bottom: 10vh;
+  right: 3vw;
+}
+#what
+{
+  display: none; /*va ramane mereu hidden pentru ca e un artificu*/
+}
+
+
+@media  only screen and (max-width: 600px) {
+
+  p, label, input, h2, h4
+  {
+    font-size: 3vmax;
+  }
+  .sbm
+  {
+    font-size: 2vmax;
+  }
+}

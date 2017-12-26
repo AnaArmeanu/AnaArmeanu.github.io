@@ -11,11 +11,17 @@ body, html
   width: auto;
   margin:0;
   position:relative;
+  overflow-x: hidden;
+/*  overflow-y: hidden;*/
 }
 body
 {
   background-color: rgb(79,68,68);
 }
+/*#y2
+{
+  color: white;
+}*/
 header
 {
   border-radius: 25px;
@@ -40,12 +46,39 @@ header h1
   width: 80vw;
   text-align: center;
 }
+header label
+{
+    color: white;
+}
+#num
+{
+  width:100vw;
+  position:absolute;
+  bottom: 20vh;
+  left:30vw;
+  display: inline;
+}
+
+#timp
+{
+  position:fixed;
+  top:0px;
+  z-index: 1;
+  left: 2px;
+  background-color: brown;
+  color: white;
+  opacity: 0;
+  padding: 0.8%;
+}
+#timp:hover
+{
+  opacity: 0.5;
+}
 
 #data1
 {
-  position: -webkit-sticky;
   position: fixed;
-  top: 97vh;
+  bottom: 0.8vh;
   z-index: 1;
   margin-left:1%;
   padding: 2px;
@@ -64,7 +97,7 @@ header h1
   overflow-y: hidden !important;
   overflow-x: hidden !important;
   background-size: cover;
-  width:calc(100vw-0.3vw);
+  width:99.7vw;
   height:101vh; /*100% din dimensiunea browserului*/
 }
 
@@ -81,9 +114,14 @@ header h1
 {
     background-image: url(imagini/alice-moore-192521.jpg)
 }
-#e4
+#e5
 {
     background-image: url(imagini/alphacolor-13-181701.jpg)
+}
+#e4
+{
+  background-image: url(imagini/kelly-sikkema-287520.jpg)
+
 }
 .jos
 {
@@ -93,8 +131,8 @@ header h1
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  bottom: 5px;
-  left:45%;
+  bottom: 5%;
+  left:47%;
   opacity: 0.6;
 }
 .jos:hover
@@ -138,12 +176,198 @@ header h1
 #pop
 {
     padding: 12px;
-    background
     padding-left: 4%;
     background-image: url(imagini/malte-wingen-381988.jpg);
     color: white;
     text-shadow:  2px 2px #000000;
     bottom: 20%;
     right: 5%;
-    height: 32%;
+    height:auto;
+}
+
+
+
+#altele h3
+{
+  text-align: center;
+}
+#altele p
+{
+  margin-left:5%;
+}
+
+#stil
+{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+#ro-vid
+{
+  width: 100vw;
+  height:100vh;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#ro-vid iframe
+{
+  width: 90vw;
+  height:90vh;
+  position: absolute;
+  top: 5%;
+  left:4.1%;
+
+}
+aside
+{
+  position: fixed;
+  top: 18vh;
+  left:20vw;
+    background-image:url(imagini/wesley-tingey-223059.jpg);
+    width:60vw;
+    height:50vh;
+    background-size: cover;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    padding-top:7%;
+    font-size: 172%;
+    display:none;
+    z-index:1;
+}
+aside img{
+  position:absolute;
+  width: 2.5vw;
+  height:5vh;
+  top: 2px;
+  right:2px;
+  opacity:0.5;
+}
+
+aside img:hover{opacity: 1;}
+aside a
+{
+  color: white;
+}
+
+nav
+{
+  background-color: white;
+  opacity:0.7;
+  position:absolute;
+  width:100%;
+  height:9%;
+  top:40%;
+  text-align: center;
+}
+nav label
+{
+  display: inline-block;
+  padding-top:2.5vh;
+  list-style-type: none;
+  font-size:3vh;
+
+}
+nav label a
+{
+    color:black;
+    text-decoration: none;
+}
+
+nav:hover
+{
+  opacity:1;
+}
+nav a:hover
+{
+  text-decoration: underline;
+}
+#e1{display: none;}/*ca sa nu arate rau pana cand se incarca js*/
+aside
+{
+  font-size: 4vh;
+}
+
+/*butoane*/
+.dreapta, .jos, .sus, .stanga
+{
+    height: 2.5vw;
+    width: auto;
+    opacity: 0.5;
+}
+.dreapta
+{
+  position: absolute;
+  right: 1vw;
+  top:48vh;
+}
+
+.sus
+{
+  position: absolute;
+  right: 50vw;
+  top:1vh;
+}
+
+.stanga
+{
+  position: absolute;
+  left: 1vw;
+  top:48vh;
+}
+
+
+@media  only screen and (max-width: 900px) {
+  .istoric
+  {
+    width: 80vw;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header
+  {
+    width:auto;
+    height:100vh;
+  }
+  #num
+  {
+    left:20vw;
+  }
+  #num label
+  {
+        color:black;
+  }
+  h1
+  {
+    position:absolute;
+    top: 20vh;
+    left:15vw;
+    font-size: 8vh;
+  }
+
+  input
+  {
+    width: 10vw;
+    height:auto;
+    font-size:1.5vmax;
+    text-align: center;
+  }
+  aside
+  {
+    font-size: 4vmin;
+    padding: 3vh;
+  }
+  aside img
+  {
+    width:4vw;
+    height:auto;
+  }
+  div
+  {
+    font-size: 4vmin;
+  }
 }
