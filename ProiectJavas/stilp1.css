@@ -123,6 +123,28 @@ header label
   background-image: url(imagini/kelly-sikkema-287520.jpg)
 
 }
+#prez
+{
+  width: 31vw;
+  height: auto;
+  background-color: rgba(221, 205, 161,0.5);
+  float: left; /* ca sa nu iasa imaginea din div, care e si ea float */
+  position: relative; /*ca sa pot aplica z-index pe div */
+  left: 0;
+  padding: 3%;
+  z-index:1;
+}
+#bMay
+{
+  float: right;
+  width: 10vw;
+  height:auto;
+}
+
+#prez:hover
+{
+  border: 5px solid black;
+}
 .jos
 {
   position: absolute;
@@ -135,7 +157,7 @@ header label
   left:47%;
   opacity: 0.6;
 }
-.jos:hover
+.jos:hover, .sus:hover, .stanga:hover, .dreapta:hover
 {
   opacity:1;
 }
@@ -203,7 +225,7 @@ header label
   right: 10%;
 }
 
-#ro-vid
+.vid
 {
   width: 100vw;
   height:100vh;
@@ -212,7 +234,7 @@ header label
   margin-right: auto;
   position: relative;
 }
-#ro-vid iframe
+.vid iframe
 {
   width: 90vw;
   height:90vh;
@@ -321,6 +343,48 @@ aside
 
 
 @media  only screen and (max-width: 900px) {
+
+  #rock
+  {
+    top: 7vw;
+  }
+  .jos, .sus, .stanga, .dreapta
+{
+  width: 5vw;
+  height:auto;
+}
+  .stanga
+  {
+    left:auto;
+    right: 93vw;
+  }
+.dreapta
+  {
+    left:auto;
+    left: 93vw;
+  }
+  #prez
+  {
+    background-color: rgb(221, 205, 161);
+    width: 100vw;
+    height: auto;
+    font-size: 15px;
+    z-index:0;
+    float: none;
+  }
+  #prez img
+  {
+    width: 50%;
+    height:auto;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #prez p
+  {
+    padding-right: 7vw;
+    padding-left: 7vw;
+  }
   .istoric
   {
     width: 80vw;
