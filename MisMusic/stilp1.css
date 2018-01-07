@@ -1,0 +1,395 @@
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Risque', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Heebo', sans-serif;
+font-family: 'Limelight', cursive;
+*/
+body, html
+{
+  height: 100%;
+  width: auto;
+  margin:0;
+  position:relative;
+  overflow-x: hidden;
+/*  overflow-y: hidden;*/
+}
+body
+{
+  background-color: rgb(79,68,68);
+}
+/*#y2
+{
+  color: white;
+}*/
+header
+{
+  border-radius: 25px;
+  background-image: url(imagini/egor-khomiakov-242859.jpg);
+  background-repeat: no-repeat;
+  overflow-y: hidden ;
+  overflow-x: hidden ;
+  background-size: cover;
+  width:80vw;
+  height: 100vh;
+
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;/*ca sa pot folosi absolut in fii*/
+}
+
+header h1
+{
+  color: white;
+  font-size:calc(0.8em + 3.4vw);
+  height:auto;
+  width: 80vw;
+  text-align: center;
+}
+header label
+{
+    color: white;
+}
+#num
+{
+  width:100vw;
+  position:absolute;
+  bottom: 20vh;
+  left:30vw;
+  display: inline;
+}
+
+#timp
+{
+  position:fixed;
+  top:0px;
+  z-index: 1;
+  left: 2px;
+  background-color: brown;
+  color: white;
+  opacity: 0;
+  padding: 0.8%;
+}
+#timp:hover
+{
+  opacity: 0.5;
+}
+
+#data1
+{
+  position: fixed;
+  bottom: 0.8vh;
+  z-index: 1;
+  margin-left:1%;
+  padding: 2px;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+#data1:hover
+{
+  opacity: 1;
+}
+
+.ecran
+{
+  position:relative;/*ca sa pot folosi absolut in fii*/
+  background-repeat: no-repeat;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  background-size: cover;
+  width:99.7vw;
+  height:101vh; /*100% din dimensiunea browserului*/
+}
+
+#e1
+{
+    background-image: url(imagini/nicola-gypsicola-70783.jpg);
+}
+
+#e2
+{
+    background-image: url(imagini/roberta-sorge-125543.jpg);
+}
+#e3
+{
+    background-image: url(imagini/alice-moore-192521.jpg)
+}
+#e5
+{
+    background-image: url(imagini/alphacolor-13-181701.jpg)
+}
+#e4
+{
+  background-image: url(imagini/kelly-sikkema-287520.jpg)
+
+}
+#prez
+{
+  width: 31vw;
+  height: auto;
+  background-color: rgba(221, 205, 161,0.5);
+  float: left; /* ca sa nu iasa imaginea din div, care e si ea float */
+  position: relative; /*ca sa pot aplica z-index pe div */
+  left: 0;
+  padding: 3%;
+  z-index:1;
+}
+#bMay
+{
+  float: right;
+  width: 10vw;
+  height:auto;
+}
+
+#prez:hover
+{
+  border: 5px solid black;
+}
+.jos
+{
+  position: absolute;
+  width: 5%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  bottom: 5%;
+  left:47%;
+  opacity: 0.6;
+}
+.jos:hover, .sus:hover, .stanga:hover, .dreapta:hover
+{
+  opacity:1;
+}
+
+.istoric
+{
+  background-repeat: no-repeat;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  background-size: cover;
+  width:30vw;
+  height:auto;
+  position: absolute;
+}
+
+#rock
+{
+    padding: 12px;
+    padding-left: 4%;
+    background-image: url(imagini/scott-gruber-41185.jpg);
+    color: white;
+    text-shadow:  2px 2px #000000;
+    bottom: 20%;
+    right: 5%;
+}
+
+#folk
+{
+    padding: 12px;
+    padding-left: 4%;
+    background-image: url(imagini/pexels-photo-213207.jpg);
+    color: white;
+    text-shadow:  2px 2px #000000;
+    bottom: 20%;
+    right: 5%;
+}
+
+#pop
+{
+    padding: 12px;
+    padding-left: 4%;
+    background-image: url(imagini/malte-wingen-381988.jpg);
+    color: white;
+    text-shadow:  2px 2px #000000;
+    bottom: 20%;
+    right: 5%;
+    height:auto;
+}
+
+
+
+#altele h3
+{
+  text-align: center;
+}
+#altele p
+{
+  margin-left:5%;
+}
+
+#stil
+{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.vid
+{
+  width: 100vw;
+  height:100vh;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.vid iframe
+{
+  width: 90vw;
+  height:90vh;
+  position: absolute;
+  top: 5%;
+  left:4.1%;
+
+}
+aside
+{
+  position: fixed;
+  top: 18vh;
+  left:20vw;
+    background-image:url(imagini/wesley-tingey-223059.jpg);
+    width:60vw;
+    height:50vh;
+    background-size: cover;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    padding-top:7%;
+    font-size: 172%;
+    display:none;
+    z-index:1;
+}
+aside img{
+  position:absolute;
+  width: 2.5vw;
+  height:5vh;
+  top: 2px;
+  right:2px;
+  opacity:0.5;
+}
+
+aside img:hover{opacity: 1;}
+aside a
+{
+  color: white;
+}
+
+nav
+{
+  background-color: white;
+  opacity:0.7;
+  position:absolute;
+  width:100%;
+  height:9%;
+  top:40%;
+  text-align: center;
+}
+nav label
+{
+  display: inline-block;
+  padding-top:2.5vh;
+  list-style-type: none;
+  font-size:3vh;
+
+}
+nav label a
+{
+    color:black;
+    text-decoration: none;
+}
+
+nav:hover
+{
+  opacity:1;
+}
+nav a:hover
+{
+  text-decoration: underline;
+}
+#e1{display: none;}/*ca sa nu arate rau pana cand se incarca js*/
+aside
+{
+  font-size: 4vh;
+}
+
+/*butoane*/
+.dreapta, .jos, .sus, .stanga
+{
+    height: 2.5vw;
+    width: auto;
+    opacity: 0.5;
+}
+.dreapta
+{
+  position: absolute;
+  right: 1vw;
+  top:48vh;
+}
+
+.sus
+{
+  position: absolute;
+  right: 50vw;
+  top:1vh;
+}
+
+.stanga
+{
+  position: absolute;
+  left: 1vw;
+  top:48vh;
+}
+
+
+@media  only screen and (max-width: 900px) {
+  .istoric
+  {
+    width: 80vw;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header
+  {
+    width:auto;
+    height:100vh;
+  }
+  #num
+  {
+    left:20vw;
+  }
+  #num label
+  {
+        color:black;
+  }
+  h1
+  {
+    position:absolute;
+    top: 20vh;
+    left:15vw;
+    font-size: 8vh;
+  }
+
+  input
+  {
+    width: 10vw;
+    height:auto;
+    font-size:1.5vmax;
+    text-align: center;
+  }
+  aside
+  {
+    font-size: 4vmin;
+    padding: 3vh;
+  }
+  aside img
+  {
+    width:4vw;
+    height:auto;
+  }
+  div
+  {
+    font-size: 4vmin;
+  }
+}

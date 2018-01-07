@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>M is for Music</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stilp3.css">
+  <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Heebo|Satisfy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scr3.js"></script>
+</head>
+
+<body>
+  <header>
+    <h2>QUIZ</h2>
+    <h4>Test your knowledge!</h4>
+  </header>
+  <section id="test">
+  <div id="alegere">  <p>Choose the genre: </p>
+    <input type="radio" id="r" name="tip"><label>Rock</label>
+    <input type="radio" id="p" name="tip"><label>Pop</label>
+    <span><input type="button" value="Submit" class="sbm"></span>
+  </div>
+  <article class="rock" id="t1">
+    <p>1. Which band sings: "Stairways to heaven "?</p>
+    <input type="checkbox" name="trup" class="q1"><label>Metallica</label>
+    <input type="checkbox" name="trup" class="q1"><label>Scorpions</label>
+    <input type="checkbox" name="trup" class="q1"><label>AC/DC</label>
+    <input type="checkbox" name="trup" class="q1"><label>Led Zeppelin</label>
+    <input type="button" value="Submit" class="sbm">
+  </article>
+  <article class="rock" id="t2">
+    <p>2. What is the name of Evanescense's lead singer?</p>
+    <!--<input type="checkbox" class="q2"><label>Amy Lee</label>
+    <input type="checkbox" class="q2"><label>Lzzy Hale</label>
+    <input type="checkbox" class="q2"><label>Alex Harper</label>-->
+    <select name="Artists"  id="q2">
+  <option value="Zoe Soo" >Zoe Soo</option>
+  <option value="Amy Lee">Amy Lee</option>
+  <option value="Lzzy Hale">Lzzy Hale</option>
+  <option value="Alex Harper">Alex Harper</option>
+</select>
+    <input type="button" value="Submit" class="sbm">
+  </article>
+  <article class="rock" id="t3">
+    <p>3. Drag the artists' picture into its respective band name.</p>
+    <img src="imagini/chevelle.jpg" id="drag1" draggable="true"
+ondragstart="drag(event)" alt="band">
+<br>
+    <label class="l">Chevelle &nbsp;&nbsp;</label>
+   <div id="d1" ondrop="drop1(event)" ondragover="allowDrop(event)" class="d">
+    </div>
+    <label class="l">&nbsp;&nbsp;Linkin Park</label>
+    <div id="d2" ondrop="drop2(event)" ondragover="allowDrop(event)" class="d">
+    </div>
+    <p id="what"></p><!--Aici vreau sa memorez pe care dintre div-uri a fost lasata imaginea : 1-Chevelle 2-Lin P -->
+    <input type="button" value="Submit" class="sbm" id="s1">
+  </article>
+
+  <article class="rock" id="t4">
+    <p id="p2">You won </p>
+    <p id="p1"></p>
+    <input type="button" value="See answears" id="s2">
+    <p id="ras"></p>
+  </article>
+
+  <article id="pop">
+    <p >Sorry, there's nothing here! :( </p>
+    <p>Soon to be added...</p>
+  </article>
+  </section>
+</body>
+</html>
