@@ -1,0 +1,183 @@
+#Sfaturi div
+{
+	 margin-top: 0%;
+    border: 5px solid #F1DED1;
+    border-radius: 8px ;
+    background-color: rgba(248, 247, 241,0.80);
+    width: 70%; /* e 70% din dimensiunea articolului */
+    height: auto;
+    -webkit-box-sizing: border-box;/*pentru pozitionarea corecta a borederului*/
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2.1%;
+    overflow: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.5%;
+
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+
+    -webkit-column-gap: 3vw; /* Chrome, Safari, Opera */
+    -moz-column-gap: 3vw; /* Firefox */
+    column-gap: 3vw;
+
+    font-size: 18px;
+}
+
+#Sfaturi h2, #Tabel h2, #Nume h2, #Joculet_map h2
+{
+	text-align: center;
+	border-size: border-box;
+	 background-color: #22252C;
+	color: white;
+	width: 60%;
+	height:auto;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: 0%;
+	border-radius: 8px;
+
+}
+
+#Tabel div, #Nume div, #Joculet_map div
+{
+	margin-top: 0%;
+    border: 5px solid #F1DED1;
+    border-radius: 8px ;
+    background-color: rgba(248, 247, 241,0.80);
+    width: 70%; /* e 70% din dimensiunea articolului */
+    height: auto;
+    -webkit-box-sizing: border-box;/*pentru pozitionarea corecta a borederului*/
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2.1%;
+    overflow: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.5%;
+
+    font-size: 18px;
+}
+
+#Joculet_map div
+{
+	overflow-y: scroll;
+	/*fara nimic, e auto, deci ^ nu face nimic, dar prefer asa;
+	overflow-y:hidden; ascunde scroll bar-ul*/
+}
+
+#Nume div
+{
+	width:20%;
+	height:auto;
+}
+
+table
+{
+	border-collapse: collapse;
+	width: 100%;
+	height:auto;
+}
+
+table td, th
+{
+	border: 1px solid grey;
+	padding: 1%;
+	text-align:center;
+}
+
+table th
+{
+	background-color: rgba(248,131,121,1);/*daca browserul nu suporta*/
+	background: linear-gradient(coral, cornsilk);
+}
+
+table th:hover
+{
+	background-color: coral;
+}
+
+table tr:hover
+{
+	background-color:rgba(248, 247, 270,0.7); 
+	background: linear-gradient(cornsilk, white);
+}
+
+img
+{
+	width: 40%;
+	height:auto;
+}
+
+
+img {
+    -webkit-animation-name: exemplu; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: exemplu;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exemplu {
+    0%   {transform: translate3d(50px, 30px, 0px) rotate(-40deg) ;} /*fiecare miscare: 1.5s*/
+    25%  {transform:translate3d(25px, 10px, 25px) rotate(-80deg) ;}
+    50%  {transform:translate3d(0px, 0px, 0px) rotate(0deg) ;}
+    75%  {transform:translate3d(20px, 20px, 20px) rotate(20deg) ;}
+    100% {transform:translate3d(0px, 0px, 0px) rotate(0deg) ;}
+}
+
+@media screen and (max-width: 900px)
+{
+	#Sfaturi div
+	{
+		width: 100%;
+	}
+
+	h2
+	{
+		font-size: 12px;
+	}
+
+	#Sfaturi h4
+	{
+		margin: 2px;
+		font-size: 12px;
+	}
+
+	#meniu_pagina nav
+	{
+		visibility: hidden;
+	}
+	p,li
+	{
+		font-size: 60%;
+	}
+	#Nume div 
+	{
+		width:40%;
+	}
+}
+
+@media screen and (max-width: 700px)
+{
+	table
+	{
+		font-size: 80%;
+	}
+
+		#Nume div 
+	{
+		width:80%;
+	}
+}
+
+footer
+{
+	margin-top: 5%;
+}
